@@ -7,31 +7,31 @@
 </head>
 <body>
     <p>
-        <button onclick="cal += '1';console.log(cal);">1</button>
-        <button onclick="cal += '2';console.log(cal);">2</button>
-        <button onclick="cal += '3';console.log(cal);">3</button>
-        <button onclick="cal += ' + ';console.log(cal);">+</button>
+        <button onclick="updateCalculation('1');">1</button>
+        <button onclick="updateCalculation('2');">2</button>
+        <button onclick="updateCalculation('3');">3</button>
+        <button onclick="updateCalculation(' + ');">+</button>
     </p>
   
     <p>
-        <button onclick="cal += '4';console.log(cal);">4</button>
-        <button onclick="cal += '5';console.log(cal);">5</button>
-        <button onclick="cal += '6';console.log(cal);">6</button>
-        <button onclick="cal += ' - ';console.log(cal);">-</button>
+        <button onclick="updateCalculation('4');">4</button>
+        <button onclick="updateCalculation('5');">5</button>
+        <button onclick="updateCalculation('6');">6</button>
+        <button onclick="updateCalculation(' - ');">-</button>
     </p>
   
     <p>
-        <button onclick="cal += '7';console.log(cal);">7</button>
-        <button onclick="cal += '8';console.log(cal);">8</button>
-        <button onclick="cal += '9';console.log(cal);">9</button>
-        <button onclick="cal += ' * ';console.log(cal);">*</button>
+        <button onclick="updateCalculation('7');">7</button>
+        <button onclick="updateCalculation('8');">8</button>
+        <button onclick="updateCalculation('9');">9</button>
+        <button onclick="updateCalculation(' * ');">*</button>
     </p>
   
     <p>
-        <button onclick="cal += '0';console.log(cal);">0</button>
-        <button onclick="cal += '.';console.log(cal);">.</button>
+        <button onclick="updateCalculation('0');">0</button>
+        <button onclick="updateCalculation('.');">.</button>
         <button onclick="cal = eval(cal);console.log(cal);">=</button>
-        <button onclick="cal += ' / ';console.log(cal);">/</button>
+        <button onclick="updateCalculation(' / ');console.log(cal);">/</button>
     </p>
   
     <p>
