@@ -10,19 +10,15 @@
         function convertLength(len, from, to) {
         if (from === 'km' && to === 'miles') {
           return `${len / 1.6} ${to}`;
-
         } 
         else if (from === 'km' && to === 'ft') {
-          return `${len * 3281} ${to}`;
-          
+          return `${len * 3281} ${to}`; 
         } 
         else if (from === 'miles' && to === 'km') {
           return `${len * 1.6} ${to}`;
-
         } 
         else if (from === 'miles' && to === 'ft') {
           return `${len * 5280} ${to}`;
-
         }
         else if (from === 'ft' && to === 'km') {
           return `${len / 3281} ${to}`;
