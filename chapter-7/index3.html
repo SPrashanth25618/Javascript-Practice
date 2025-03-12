@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function greet(name) {
+            if (!name) {
+                console.log('Hi there!');
+            } else {
+                console.log(`Hello ${name}!`);
+            }
+        }
+        greet('Prashanth');
+        greet();
+
+        function convertToFahrenheit(cel) {
+            return (cel * 9 / 5) + 32;
+        }
+        console.log(convertToFahrenheit(25));
+
+        function convertToCelsius(fahr) {
+            return (fahr - 32) * 5 / 9;
+        }
+        console.log(convertToCelsius(86));
+
+
+        function convertTemperature(deg, unit) {
+            if (unit === 'C') {
+                const result = convertToFahrenheit(deg);
+                return `${result}F`;
+            } else if (unit === 'F') {
+                const result = convertToCelsius(deg);
+                return `${result}C`;
+            }
+        }
+
+        console.log(convertTemperature(25, 'C'));
+        console.log(convertTemperature(86, 'F'));
+
+        function convertLength(len, from, to) {
+            if (from === 'km' && to === 'miles') {
+                return `${len / 1.6} miles`;
+            }
+            else if (from === 'miles' && to === 'km') {
+                return `${len * 1.6} km`;
+            } 
+            else if (from === to) {
+                return `${len} ${to}`;
+            }
+        }
+
+        console.log(convertLength(50, 'miles', 'km'));
+        console.log(convertLength(32, 'km', 'miles'));
+        console.log(convertLength(50, 'km', 'km'));
+    </script>
+</body>
+
+</html>
