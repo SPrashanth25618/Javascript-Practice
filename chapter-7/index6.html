@@ -22,6 +22,7 @@
         function updateCartQuantity(change) {
         if(cart_quantity + change > 10) {
           alert('The cart is full');
+          return;
         } 
         else if(cart_quantity + change < 0) {
           alert('Not enough items in the cart');
