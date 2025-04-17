@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+
+<body>
+    <script>
+        // Global Scope
+        let globalVar = "I'm global";
+        function showGlobal() {
+            console.log(globalVar); // Works fine
+        }
+        showGlobal();
+        console.log(globalVar);   // Also works here
+
+        //Local Scope
+        function myFunction() {
+            let localVar = "I'm local";
+            console.log(localVar); // Works here
+        }
+        myFunction();
+        console.log(localVar); //Error: localVar is not defined
+
+        //Block Scope
+        if (true) {
+            let blockVar = "I'm block scoped";
+            console.log(blockVar);  // Works here
+        }
+        console.log(blockVar);      //Error: blockVar is not defined
+
+        //Variable Shadowing
+        let message = "Hello from global";
+        function greet() {
+            let message = "Hello from function"; // Shadows global `message`
+            console.log(message); // "Hello from function"
+        }
+        greet();
+        console.log(message); // "Hello from global"
+
+    </script>
+</body>
+
+</html>
