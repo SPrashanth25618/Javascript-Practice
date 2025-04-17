@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number and Math</title>
+</head>
+
+<body>
+    <script>
+        function formatCurrency(amount, currencyCode) {
+            return new Intl.NumberFormat('en', {
+                style: 'currency',
+                currency: currencyCode.toUpperCase(),
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            }).format(amount);
+        }
+        console.log(formatCurrency(68796567.89,'inr')); // output : ₹68,796,567.89
+    </script>
+</body>
+
+</html>
