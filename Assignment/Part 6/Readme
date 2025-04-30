@@ -1,0 +1,1 @@
+Every time counterA() and counterB() are invoked, a new count variable is made, so counterA and counterB both possess individual count variables. counterA() increments its own count when invoked, whereas counterB() resets to 0. This is due to closures, and both functions keep their own state, not a common one.
