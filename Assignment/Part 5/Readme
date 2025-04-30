@@ -1,0 +1,2 @@
+The continue statement causes the current loop iteration to bypass and go straight to the next one. In a loop in which i === 2, for instance, it bypasses printing 2.
+The break statement terminates the loop entirely. As soon as break is reached, none of the code inside the loop will run. For instance, when i === 4, it breaks the loop.
