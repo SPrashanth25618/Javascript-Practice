@@ -1,0 +1,3 @@
+JavaScript treats functions in a flexible way—if too few arguments are passed, missing parameters are undefined; if too many, the extras are ignored except when accessed. The rest parameter (.rest) takes extra arguments as an array and has to be the last one. For instance, sumAll(.numbers) employs this to add an unspecified number of values.
+
+As far as objects are concerned, JavaScript considers all keys to be strings. Numeric keys are ordered in ascending order, but string keys preserve the order in which they were inserted. This applies to both for.in and Object.keys(). In a mixed object such as {100: "one hundred", a: "apple", 2: "two"}, numeric keys (2, 100) are first (ordered), and then others in the insertion order.
